@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Location</title>
+      <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(green,blue);
+            background-repeat: no-repeat;
+        }
+        button{
+            font-size: 20px;
+            padding: 20px 46px 10px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-weight: 500;
+            color: rgb(64, 27, 212);
+            cursor: pointer;
+            background-color: chartreuse;
+        }
+        #card{
+            color: white;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            margin-top: 200px;
+        }
+        h1{
+            color: cornsilk;
+        }
+    </style>  
+</head>
+<body>
+     <div class="container"> 
+        <h1>Detect Your Location </h1>
+        <button onclick="getuserLocation()">Click Me</button>
+        <p id="card"></p>
+    </div> 
+   <script src="../Js/Geoloaction.js"></script>
+</body>
+</html>
